@@ -1,0 +1,24 @@
+{
+  "name": "dataStructor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juntaozhou05/dataStructor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juntaozhou05/dataStructor/issues"
+  },
+  "homepage": "https://github.com/juntaozhou05/dataStructor#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.6.2"
+  }
+}
