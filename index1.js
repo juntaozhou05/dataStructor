@@ -136,3 +136,35 @@ function dDisplay() {
     current = current.next
   }
 }
+
+//查找第n个节点
+function findN(n) {
+  let current = this.head
+  while(n>0) {
+    if(current.next.element === "head") {
+      current = current.next.next
+    }else {
+      current = current.next
+    }
+    n--
+  }
+}
+
+//当前链表一共有多少个元素
+function count() {
+  let current = this.head
+  let i = 0;
+  while(!current.next.element === "head") {
+    current = current.next
+    i++
+  }
+  return i
+}
+
+//约瑟夫问题
+let n = 3
+while(count() > 2) {
+  find(n)
+  remove(find(n))
+  display()
+}
