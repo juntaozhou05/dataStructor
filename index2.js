@@ -28,6 +28,7 @@ function clear() {
 	return this.top = 0
 }
 
+//进制转换
 function mulBase(num, base) {
 	var s = new Stack();
 do {
@@ -39,4 +40,9 @@ while (s.length() > 0) {
 	converted += s.pop();
 }
 	return converted;
+}
+
+//逆波兰算法
+function polan(str) {
+	let arr = str.split("").reverse()
 }
