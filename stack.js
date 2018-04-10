@@ -42,17 +42,18 @@ function mulBase(num, base) {
   return converted;
 }
 
-//逆波兰算法
+//逆波兰表达式
 function polan(str) {
+  let arr = str.split(" ")
   let result = 0;
   let tempNum = -1;
   let tempArray = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str[i].match(/\d/)) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].match(/\d/)) {
       tempNum++;
-      tempArray[tempNum] = str[i];
+      tempArray[tempNum] = arr[i];
     } else {
-      switch (str[i]) {
+      switch (arr[i]) {
         case "+":
           result = tempArray[tempNum--] * 1 + tempArray[tempNum];
           tempNum--;
