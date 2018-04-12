@@ -40,3 +40,23 @@ function empty() {
         return false
     }
 }
+
+//斐波那契数列
+function fib(num) {
+    let arr = []
+    arr[0] = 0
+    arr[1] = 1
+    for (let i = 2; i < num; i++) {
+        arr[i] = arr[i - 1] + arr[i - 2]
+        console.log(arr[i])
+    }
+}
+//斐波那契 递归法
+function fib(num) {
+    if (num < 2) {
+        return num === 0 ? 0 : 1
+    } else {
+        return fib(num - 1) + fib(num - 2)
+    }
+}
+
